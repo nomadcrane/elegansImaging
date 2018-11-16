@@ -1,4 +1,8 @@
 function visitXY(scope,xLoc,yLoc)
+% this moves the microscope to a specific XY location using a motorized
+% stage
+
+
 global mmc;
 mmc.setXYPosition(scope.xyDrive,xLoc,yLoc);
 pause(.1);

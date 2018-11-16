@@ -1,5 +1,8 @@
 function setFilters(scope)
-%Change the microscope to the appropriate color/filter
+%Change the microscope to the appropriate color/filter, and set the power
+%for the LED. The led power is not going to be a universal command, so it
+%will likely need to be modified for your specific setup.
+
 global mmc
 chName=scope.loopParams(scope.currLoop).channels{scope.currCh};
 expos=scope.loopParams(scope.currLoop).exposureTime(scope.currCh);

@@ -1,4 +1,12 @@
 classdef wormscopeGUI<handle
+    % wormscopeGUI
+    %
+    % a GUI designed to allow control of microfluidic devices to image C
+    % elegans. It creates a user interface which to control microfluidic
+    % valves on chip and to allow imaging of the nematodes. This assumes
+    % that the microscope can be interacted with using micromanager.
+    %
+
     properties
         figure = [];
         expPanel

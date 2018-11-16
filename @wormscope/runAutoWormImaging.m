@@ -1,6 +1,11 @@
 function runAutoWormImaging(wormscope)
-%starts the image acquisition run
-
+    % runAutoWormImaging
+    % This function works to automatically acquire images of C elegans as
+    % they entire the imaging portion of the microfluidic device. It is
+    % designed to acquire a specific number of images of animals, and then
+    % halt execution. It has not been fully debugged, so it likely has
+    % issues. 
+    
 global mmc;
 global gui;
 gui.closeAllAcquisitions();

@@ -1,4 +1,12 @@
 classdef solenoidValveGUI<handle
+    % solenoidValveGUI
+    %
+    % a simple GUI that shows the status of all solenoid valves that can be
+    % actuated and controlled by the computer. By default, it assumes that
+    % there are 8 valves given the constraints of the physcial control box
+    % This class is called by the wormscopeGUI to control each valve and
+    % provides and instantaneuous visual feedback of the valve status.
+    %
     properties
         figure = [];
         
